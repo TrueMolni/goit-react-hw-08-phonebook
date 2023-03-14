@@ -10,8 +10,9 @@ export const Navbar = () => {
 
   return (
     <div>
-      {!isLogin && <NavAuth />}
-      {isLogin && <NavMenu />}
+      {isLogin && <NavMenu />} {!isLogin && <NavAuth />}
     </div>
   );
 };
+
+export default Navbar;

@@ -1,8 +1,8 @@
-// import styles from './NavMenu.module.scss';
+import styles from './NavMenu.module.scss';
 import { useSelector, useDispatch } from 'react-redux';
 
-import { logout } from '../../../redux/auth/auth-operations';
-import { getUser } from '../../../redux/auth/auth-selector';
+import { logout } from 'redux/auth/auth-operations';
+import { getUser } from 'redux/auth/auth-selector';
 
 const NavMenu = () => {
   const { email } = useSelector(getUser);
@@ -13,7 +13,7 @@ const NavMenu = () => {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       <p>{email}</p>
       <button onClick={onLogout}>Logout</button>
     </div>
