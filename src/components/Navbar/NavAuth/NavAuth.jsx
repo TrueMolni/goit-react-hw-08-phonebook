@@ -3,7 +3,7 @@ import styles from './nav-auth.module.scss';
 
 const NavAuth = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <NavLink className={styles.link} to="/register">
         Register
       </NavLink>
