@@ -1,10 +1,10 @@
-import styles from './NavMenu.module.scss';
+import styles from './UserMenu.module.scss';
 import { useSelector, useDispatch } from 'react-redux';
 
 import { logout } from 'redux/auth/auth-operations';
 import { getUser } from 'redux/auth/auth-selector';
 
-const NavMenu = () => {
+const UserMenu = () => {
   const { email } = useSelector(getUser);
   const dispatch = useDispatch();
 
@@ -20,4 +20,4 @@ const NavMenu = () => {
   );
 };
 
-export default NavMenu;
+export default UserMenu;
